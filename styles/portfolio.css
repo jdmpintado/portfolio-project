@@ -40,6 +40,9 @@ h2 {
     font-size: 64px;
 }
 
+h3 {
+    font-size: 18px;
+}
 
 footer {
     background-color: var(--secondary-color);
@@ -80,7 +83,7 @@ footer {
 .hero {
     background: var(--secondary-color);
     text-align: center;
-    padding: 160px 20px;
+    padding: 120px 20px 80px;
 }
 
 .hero p {
@@ -99,7 +102,6 @@ footer {
 
 .presentation {
     font-size: 24px;
-    text-align: start;
     margin: 40px 120px;
 }
 
@@ -172,6 +174,39 @@ footer {
     font-size: 24px;
 }
 
+.about-container,
+.work-container {
+    padding: 80px 20px;
+}
+
+.work-container {
+    text-align: center;
+}
+
+.contact-container {
+    padding: 80px 300px;
+}
+
+.portrait {
+    border-radius: 10px;
+    width: 80%;
+    margin: 40px;
+}
+
+.access-project {
+    color: var(--default-text-color);
+    text-decoration: none;
+}
+
+.access-project:hover {
+    color: var(--branding-color);
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.zoom-image:hover {
+    transform: scale(1.05);
+}
 
 @media (max-width: 900px) {
     h1 {
@@ -183,7 +218,8 @@ footer {
         font-size: 44px;
     }
 
-    .hero {
+    .hero,
+    .work-container {
         padding: 120px 20px;
     }
 
@@ -191,6 +227,16 @@ footer {
         padding: 0;
         text-align: center;
     }
+
+    .about-container,
+    .contact-container {
+        padding: 80px 0;
+    }
+
+    .about-description {
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 1024px) {

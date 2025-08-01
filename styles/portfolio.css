@@ -26,6 +26,7 @@ h6 {
 
 h1 {
     font-size: 96px;
+    line-height: 1.5;
 }
 
 p {
@@ -37,6 +38,43 @@ p {
 
 h2 {
     font-size: 64px;
+}
+
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 30px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 20%;
+}
+
+.btn-selected {
+    background: var(--branding-color) ! important;
+    color: white !important;
+    padding: 9px 15px !important;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.btn-selected:hover {
+    background: white ! important;
+    color: var(--branding-color) !important;
+    border: 1px solid var(--branding-color) !important;
+}
+
+.btn-unselected {
+    background: white ! important;
+    color: var(--branding-color) !important;
+    padding: 9px 15px !important;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.btn-unselected:hover {
+    border: 1px solid var(--branding-color) !important;
 }
 
 .hero {
@@ -59,33 +97,81 @@ h2 {
     color: var(--default-text-color);
 }
 
+.presentation {
+    font-size: 24px;
+    text-align: start;
+    margin: 40px 120px;
+}
+
 .btn-branding {
     background-color: var(--branding-color);
     color: white;
-    border-radius: 4px;
+    border-radius: 20px;
     padding: 18px 30px;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.5;
+}
+
+.btn-branding:hover {
+    color: var(--branding-color);
+    border: 1px solid var(--branding-color);
 }
 
 .btn-branding-outline {
     color: var(--branding-color);
     border: 1px solid var(--branding-color);
-    border-radius: 4px;
+    border-radius: 20px;
     padding: 18px 30px;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.5;
 }
 
-.presentation {
-    font-size: 18px;
+.btn-branding-outline:hover {
+    background-color: var(--branding-color);
+    color: white;
 }
 
 .project-description {
     padding: 90px 60px;
 }
+
+.email {
+    padding-bottom: 40px;
+}
+
+.email-contact {
+    color: var(--default-text-color);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.email-contact:hover {
+    color: var(--branding-color);
+    text-decoration: underline;
+    font-size: 28px;
+}
+
+.media {
+    color: var(--default-text-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.media:hover {
+    color: var(--branding-color);
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.fa-brands {
+    color: var(--branding-color);
+    font-size: 24px;
+}
+
 
 @media (max-width: 900px) {
     h1 {
@@ -98,7 +184,7 @@ h2 {
     }
 
     .hero {
-        padding: 80px 20px;
+        padding: 120px 20px;
     }
 
     .project-description {
@@ -112,22 +198,3 @@ h2 {
         padding: 60px 30px;
     }
 }
-
-/* .poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.playfair-display-<uniquifier> {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-} */

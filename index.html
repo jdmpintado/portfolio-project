@@ -3,106 +3,207 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio | Jéssica Pintado</title>
+    <meta
+      name="description"
+      title="Jéssica Pintado is a Front-end Developer based in Portugal, check out her projects and contact her for job inquiries"
+    />
+    <title>Front End Development Portfolio | Jéssica Pintado</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@500;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/996bf2d36d.js"
-      crossorigin="anonymous"
-    ></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@500;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/portfolio.css" />
+    <script
+      src="https://kit.fontawesome.com/996bf2d36d.js"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="styles/portfolio.css" />
   </head>
   <body>
-    <div class="hero">
-      <p>👋 Hi, I am</p>
-      <h1>Jéssica Pintado</h1>
-      <h2 class="mb-5">Front-end developer based in Portugal</h2>
-      <div>
-        <a href="#" class="btn btn-branding">Contact me</a>
-      </div>
-    </div>
-
-    <p class="presentation text-center m-5">
-      Here are some of the projects that I elaborated so far:
-    </p>
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col d-none d-lg-block">
-          <img
-            src="images/weather-app.png"
-            class="img-fluid"
-            alt="Weather App"
-          />
+    <header>
+      <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="https://www.shecodes.io/"
+            target="_blank"
+            title="Visit shecodes.io"
+            ><img class="logo" src="/images/logo.png" alt="SheCodes logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active btn btn-selected shadow-sm"
+                  aria-current="page"
+                  href="/"
+                  title="Homepage"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-unselected shadow-sm ms-2"
+                  href="/about.html"
+                  title="About Jéssica Pintado"
+                  >About me</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-unselected shadow-sm ms-2"
+                  href="/work.html"
+                  title="Front-End Development projects elaborated by Jéssica Pintado"
+                  >Work</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-unselected shadow-sm ms-2"
+                  href="/contact"
+                  title="Contact Jéssica Pintado"
+                  >Contact me</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col">
-          <div class="project-description">
-            <h2 class="mb-5">Weather App</h2>
-            <p class="mb-5 text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis quia, dignissimos nam ratione veniam quibusdam porro
-              (...).
-            </p>
-            <a href="#" class="btn btn-branding-outline">Learn more</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <p>👋 Hi, I am</p>
+        <h1>Jéssica Pintado</h1>
+        <h2 class="mb-5">Front-end developer based in Portugal</h2>
+        <div>
+          <a href="#" class="btn btn-branding">Contact me</a>
+        </div>
+      </div>
+
+      <p class="presentation">
+        Here are some of the projects I have developed so far:
+      </p>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col d-none d-lg-block">
+            <img
+              src="images/weather-app.png"
+              class="img-fluid"
+              alt="Weather App"
+            />
+          </div>
+          <div class="col">
+            <div class="project-description">
+              <h2 class="mb-5">Weather App</h2>
+              <p class="mb-5 text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quia, dignissimos nam ratione veniam quibusdam porro
+                (...).
+              </p>
+              <a href="#" class="btn btn-branding-outline"
+                >Access the project</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col">
+            <div class="project-description">
+              <h2 class="mb-5">World Clock App</h2>
+              <p class="mb-5 text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quia, dignissimos nam ratione veniam quibusdam porro
+                (...).
+              </p>
+              <a href="#" class="btn btn-branding-outline"
+                >Access the project</a
+              >
+            </div>
+          </div>
+          <div class="col d-none d-lg-block">
+            <img
+              src="images/world-clock.png"
+              class="img-fluid"
+              alt="World Clock App"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col d-none d-lg-block">
+            <img
+              src="images/ai-motivational-quotes-generator.png"
+              class="img-fluid"
+              alt="AI Motivational Quotes Generator"
+            />
+          </div>
+          <div class="col">
+            <div class="project-description">
+              <h2 class="mb-5">Motivational Quotes Generator</h2>
+              <p class="mb-5 text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis quia, dignissimos nam ratione veniam quibusdam porro
+                (...).
+              </p>
+              <a href="#" class="btn btn-branding-outline"
+                >Access the project</a
+              >
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="row mb-5">
-        <div class="col">
-          <div class="project-description">
-            <h2 class="mb-5">World Clock App</h2>
-            <p class="mb-5 text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis quia, dignissimos nam ratione veniam quibusdam porro
-              (...).
-            </p>
-            <a href="#" class="btn btn-branding-outline">Learn more</a>
-          </div>
-        </div>
-        <div class="col d-none d-lg-block">
-          <img
-            src="images/world-clock.png"
-            class="img-fluid"
-            alt="World Clock App"
-          />
-        </div>
+    </main>
+ 
+    <footer>
+      <div class="email">
+        <a
+          href="mailto: jdmpintado@gmail.com"
+          class="email-contact"
+          title="Contact Jéssica Pintado"
+          >jdmpintado@gmail.com</a
+        >
       </div>
-
-      <div class="row">
-        <div class="col d-none d-lg-block">
-          <img
-            src="images/ai-motivational-quotes-generator.png"
-            class="img-fluid"
-            alt="AI Motivational Quotes Generator"
-          />
-        </div>
-        <div class="col">
-          <div class="project-description">
-            <h2 class="mb-5">Motivational Quotes Generator</h2>
-            <p class="mb-5 text-muted">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis quia, dignissimos nam ratione veniam quibusdam porro
-              (...).
-            </p>
-            <a href="#" class="btn btn-branding-outline">Learn more</a>
-          </div>
-        </div>
+      <div class="row align-items-center d-flex">
+        <span>
+          <a href="#" class="media me-4"
+            ><i class="fa-brands fa-linkedin me-2"></i>LinkedIn</a
+          >
+          <a href="#" class="media me-4"
+            ><i class="fa-brands fa-github me-2"></i>GitHub</a
+          >
+          <a href="#" class="media me-4"
+            ><i class="fa-brands fa-whatsapp me-2"></i>WhatsApp</a
+          >
+          <a href="#" class="media"
+            ><i class="fa-brands fa-instagram me-2"></i>Instagram</a
+          >
+        </span>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
